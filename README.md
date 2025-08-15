@@ -1,4 +1,5 @@
 <b> DigitalXC ITSM Project </b>
+
 This project is about creating a data pipeline to analyze the ServiceNow Ticket data, from ingestion and transformation. It leverages several tools including DBT, PostgresDB and Apache Airflow.
 
 <b>
