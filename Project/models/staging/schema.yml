@@ -1,0 +1,37 @@
+version: 1
+
+models:
+  - name: servicenow_v1
+    description: "Standardized ticket data with cleaned fields"
+    columns:
+      - name: Ticket_ID
+        description: "The primary key for tickets"
+        tests:
+          - unique
+          - not_null
+      - name: Category
+        description: "The category of the ticket"
+      - name: Sub_Category
+        description: "The sub-category of the ticket"
+      - name: Priority
+        description: "The priority level of the ticket"
+      - name: Created_Date
+        description: "The date and time when the ticket was created"
+      - name: Resolved_Date
+        description: "The date and time when the ticket was resolved"
+      - name: Status
+        description: "The current status of the ticket"
+      - name: Assigned_Group
+        description: "The group assigned to the ticket"
+      - name: Technician
+        description: "The technician assigned to the ticket"
+      - name: Resolution_Time_Hrs
+        description: "The time taken to resolve the ticket in hours"
+      - name: Customer_Impact
+        description: "The impact level on the customer"
+      - name: Created_Year
+        description: "The year when the ticket was created"
+      - name: Created_Month
+        description: "The month when the ticket was created"
+      - name: Created_Day
+        description: "The day when the ticket was created"

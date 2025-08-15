@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: public         # Source name used in the model
+    database: db_itsm    # Your Postgres database name (optional if already set)
+    schema: public       # Schema where the table exists
+   
+    tables:
+      - name: servicenow
+

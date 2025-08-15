@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: averageresolution_v1
+    description: "Average resolution time per Category and Priority"
+    columns:
+      - name: Category
+        description: "The category of the ticket"
+      - name: Priority
+        description: "The priority level of the ticket"
+      - name: avg_resolution
+        description: "Average resolution time in hours"
+
+  - name: ticketclosurerate_v1
+    description: "Ticket closure rate per Assigned Group"
+    columns:
+      - name: AssignedGroup
+        description: "The group assigned to the ticket"
+      - name: total_tickets
+        description: "Total number of tickets assigned to the group"
+      - name: closed_tickets
+        description: "Number of tickets that have been resolved"
+      - name: closure_rate
+        description: "Percentage of tickets that have been resolved"
+
+  - name: monthlyticketsummary_v1
+    description: "Monthly aggregation of ticket metrics"
+    columns:
+      - name: MonthYear
+        description: "Year and month of the summary (YYYY-MM format)"
+      - name: total_tickets
+        description: "Total number of tickets created in this month"
+      - name: avg_resolution_time
+        description: "Average resolution time for tickets in this month"
+      - name: closure_rate
+        description: "Percentage of tickets resolved in this month"
+
+ 
