@@ -4,9 +4,11 @@ This project is about creating a data pipeline to analyze the ServiceNow Ticket 
 
 <b>
 Project Overview </b>
+
 The pipeline processes a ticket dump, applies transformations, and delivers key metrics. 
 
 Implemented tasks include:
+
 
 Data Ingestion & Transformation (DBT & PostgresDB): Raw ticket data is loaded into a PostgreSQL database. DBT performs data cleaning, transformations, and creates aggregated tables for analysis.
 
